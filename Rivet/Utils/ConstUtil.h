@@ -1,0 +1,27 @@
+#import <Foundation/Foundation.h>
+
+NSString *const kViewControllerIdentifier_tutorial;
+NSString *const kViewControllerIdentifier_mainNavigationController;
+NSString *const kViewControllerIdentifier_bottomBarNavigation;
+NSString *const kViewControllerIdentifier_conversationViewingViewController;
+NSString *const kViewControllerIdentifier_conversationMakingViewController;
+NSString *const kViewControllerIdentifier_reportDialogViewController;
+NSString *const kViewControllerIdentifier_rivetAlertViewViewController;
+NSString *const kViewControllerIdentifier_featuredConversationCollectionViewController;
+NSString *const kViewControllerIdentifier_featuredConversationViewingViewController;
+
+NSString *const kSegueIdentifier_conversationListToChat;
+NSString *const kSegueIdentifier_chatToConversationList;
+NSString *const kSegueIdentifier_myConversationsListToMyConversations;
+NSString *const kSegueIdentifier_jumpIntoRivetToSpecialThanks;
+NSString *const kSegueIdentifier_profileModalToMyConversations;
+NSString *const kSegueIdentifier_selectFeaturedConversation;
+
+@interface ConstUtil : NSObject
+
++ (NSInteger)screenWidth;
++ (NSInteger)screenHeight;
++ (NSInteger)statusBarHeight;
++ (NSInteger)userId;
+
+@end

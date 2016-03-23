@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Rivet Alert View View Controller-->
+        <scene sceneID="wvG-QM-QLo">
+            <objects>
+                <viewController storyboardIdentifier="RivetAlertViewViewController" id="IjA-an-GUH" customClass="RivetAlertViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6B-Qv-koo"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFZ-yv-EPi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJo-NE-rxe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-UX-rFx">
+                                <rect key="frame" x="200" y="200.5" width="200" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeT-3K-mAN" customClass="RoundedRectView">
+                                        <rect key="frame" x="0.0" y="147.5" width="200" height="52.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dismiss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-sb-UjS">
+                                                <rect key="frame" x="70" y="16" width="60" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="d2L-sb-UjS" secondAttribute="bottom" constant="16" id="1Lz-n4-2s5"/>
+                                            <constraint firstAttribute="centerX" secondItem="d2L-sb-UjS" secondAttribute="centerX" id="7q8-RW-rkK"/>
+                                            <constraint firstItem="d2L-sb-UjS" firstAttribute="top" secondItem="YeT-3K-mAN" secondAttribute="top" constant="16" id="LbQ-HE-pCZ"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrogIcon100px" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-V3-wD8">
+                                        <rect key="frame" x="50" y="24" width="100" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fpw-V3-wD8" secondAttribute="height" multiplier="7:5" id="ITu-AH-ztB"/>
+                                            <constraint firstAttribute="width" constant="100" id="eft-Cg-TSq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filler text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuA-cq-c9M">
+                                        <rect key="frame" x="16" y="111" width="168" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FuA-cq-c9M" secondAttribute="trailing" constant="16" id="3sy-Ha-P3u"/>
+                                    <constraint firstAttribute="width" constant="200" id="Cg4-On-7a3"/>
+                                    <constraint firstItem="FuA-cq-c9M" firstAttribute="leading" secondItem="OM1-UX-rFx" secondAttribute="leading" constant="16" id="OoL-uS-K8D"/>
+                                    <constraint firstAttribute="bottom" secondItem="YeT-3K-mAN" secondAttribute="bottom" id="Zjs-91-5ng"/>
+                                    <constraint firstAttribute="trailing" secondItem="YeT-3K-mAN" secondAttribute="trailing" id="ZtD-2r-T1i"/>
+                                    <constraint firstItem="YeT-3K-mAN" firstAttribute="leading" secondItem="OM1-UX-rFx" secondAttribute="leading" priority="900" id="eUO-pv-UKE"/>
+                                    <constraint firstAttribute="centerX" secondItem="fpw-V3-wD8" secondAttribute="centerX" id="fMQ-Nf-ABi"/>
+                                    <constraint firstItem="YeT-3K-mAN" firstAttribute="top" secondItem="FuA-cq-c9M" secondAttribute="bottom" constant="16" id="gWj-0b-2a6"/>
+                                    <constraint firstItem="FuA-cq-c9M" firstAttribute="top" secondItem="fpw-V3-wD8" secondAttribute="bottom" constant="16" id="hlo-m7-tQQ"/>
+                                    <constraint firstItem="fpw-V3-wD8" firstAttribute="top" secondItem="OM1-UX-rFx" secondAttribute="top" constant="24" id="nDV-VX-gGO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="OM1-UX-rFx" secondAttribute="centerY" id="DMu-9f-yKC"/>
+                            <constraint firstAttribute="centerX" secondItem="OM1-UX-rFx" secondAttribute="centerX" id="uv1-rw-YXB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="FuA-cq-c9M" id="oTn-RI-3h1"/>
+                        <outlet property="modalView" destination="OM1-UX-rFx" id="gpC-UG-45t"/>
+                        <outlet property="positiveButton" destination="YeT-3K-mAN" id="bB3-RL-l9Q"/>
+                        <outlet property="positiveLabel" destination="d2L-sb-UjS" id="Z1J-NQ-wTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSk-IR-dvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrogIcon100px" width="101" height="72"/>
+    </resources>
+</document>

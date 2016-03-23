@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Fabric.framework"
+      name = "Fabric.framework">
+      <FileRef
+         location = "group:Fabric">
+      </FileRef>
+      <Group
+         location = "group:Headers"
+         name = "Headers">
+         <FileRef
+            location = "group:FABAttributes.h">
+         </FileRef>
+         <FileRef
+            location = "group:Fabric.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+      <Group
+         location = "group:Modules"
+         name = "Modules">
+         <FileRef
+            location = "group:module.modulemap">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:run">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Crashlytics.framework"
+      name = "Crashlytics.framework">
+      <FileRef
+         location = "group:Crashlytics">
+      </FileRef>
+      <Group
+         location = "group:Headers"
+         name = "Headers">
+         <FileRef
+            location = "group:Answers.h">
+         </FileRef>
+         <FileRef
+            location = "group:CLSLogging.h">
+         </FileRef>
+         <FileRef
+            location = "group:CLSReport.h">
+         </FileRef>
+         <FileRef
+            location = "group:CLSStackFrame.h">
+         </FileRef>
+         <FileRef
+            location = "group:Crashlytics.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+      <Group
+         location = "group:Modules"
+         name = "Modules">
+         <FileRef
+            location = "group:module.modulemap">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:run">
+      </FileRef>
+      <FileRef
+         location = "group:submit">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:/Users/kylegrinstead/Developer/Rivet/RivetIOS/Rivet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Rivet.xcodeproj">
+   </FileRef>
+</Workspace>

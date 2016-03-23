@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppUnavailableViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="SVp-f9-oxJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHY-YK-RRx">
+                    <rect key="frame" x="0.0" y="250" width="600" height="100"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.58431372550000005" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="aRy-Tn-coF"/>
+                    </constraints>
+                    <string key="text">You're in an area where 
+Rivet is disabled. This is 
+most likely because you're 
+too close to a high school.</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.38823529411764707" green="0.65490196078431373" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XHY-YK-RRx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lgh-2Q-VIg"/>
+                <constraint firstItem="XHY-YK-RRx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aGK-mO-MRS"/>
+                <constraint firstAttribute="trailing" secondItem="XHY-YK-RRx" secondAttribute="trailing" id="idf-Dk-DZz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m2w-2i-v6b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Light Status Bar Navigation Controller-->
+        <scene sceneID="Ffx-9w-1Hj">
+            <objects>
+                <navigationController id="m2w-2i-v6b" customClass="LightStatusBarNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E2B-Cu-VsN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hq4-h8-BJQ" kind="relationship" relationship="rootViewController" id="lhs-Lo-8Vg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgU-W7-Tj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1554" y="125"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="IGl-ia-9Pw">
+            <objects>
+                <tableViewController id="Hq4-h8-BJQ" customClass="MenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EPo-yX-6nF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Jump In" id="ETq-ha-hQw">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="XQH-yp-ZQn">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XQH-yp-ZQn" id="0x2-gi-hgk">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jump Into Rivet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-FQ-kdv">
+                                                    <rect key="frame" x="8" y="12" width="139" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="139" id="AH6-9C-BTT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bdg-FQ-kdv" firstAttribute="leading" secondItem="0x2-gi-hgk" secondAttribute="leadingMargin" id="6e2-x7-ZaC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bdg-FQ-kdv" secondAttribute="bottom" constant="3" id="V7b-Mc-eB8"/>
+                                                <constraint firstItem="Bdg-FQ-kdv" firstAttribute="top" secondItem="0x2-gi-hgk" secondAttribute="topMargin" constant="4" id="YVg-4n-Cp7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="N5q-vh-1yH" kind="show" id="gIU-cz-zTj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eNU-pK-XWE">
+                                        <rect key="frame" x="0.0" y="130" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eNU-pK-XWE" id="g8E-1d-3tn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share with Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpL-Qj-yiV">
+                                                    <rect key="frame" x="8" y="12" width="144" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="144" id="xyG-z6-Cjv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XpL-Qj-yiV" firstAttribute="leading" secondItem="g8E-1d-3tn" secondAttribute="leadingMargin" id="A69-Kx-N2F"/>
+                                                <constraint firstItem="XpL-Qj-yiV" firstAttribute="top" secondItem="g8E-1d-3tn" secondAttribute="topMargin" constant="4" id="CGF-gh-Yld"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XpL-Qj-yiV" secondAttribute="bottom" constant="3" id="gzp-Pt-ZUm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="die-s6-6AI">
+                                        <rect key="frame" x="0.0" y="174" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="die-s6-6AI" id="F4S-rr-yQ2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate on the App Store" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SP-rZ-AJk">
+                                                    <rect key="frame" x="8" y="12" width="170" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="170" id="aIc-fH-pjB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="9SP-rZ-AJk" secondAttribute="bottom" constant="3" id="BQy-ZW-tSl"/>
+                                                <constraint firstItem="9SP-rZ-AJk" firstAttribute="top" secondItem="F4S-rr-yQ2" secondAttribute="topMargin" constant="4" id="fuK-rO-fI3"/>
+                                                <constraint firstItem="9SP-rZ-AJk" firstAttribute="leading" secondItem="F4S-rr-yQ2" secondAttribute="leadingMargin" id="sjd-mw-gtG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QPt-sM-zMv">
+                                        <rect key="frame" x="0.0" y="218" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QPt-sM-zMv" id="Ume-ok-NNu">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us/Support" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udY-XQ-RPK">
+                                                    <rect key="frame" x="8" y="12" width="175" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="175" id="ogY-ff-8f3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="udY-XQ-RPK" secondAttribute="bottom" constant="3" id="8gs-iU-zgX"/>
+                                                <constraint firstItem="udY-XQ-RPK" firstAttribute="top" secondItem="Ume-ok-NNu" secondAttribute="topMargin" constant="4" id="ZLm-Wt-NU8"/>
+                                                <constraint firstItem="udY-XQ-RPK" firstAttribute="leading" secondItem="Ume-ok-NNu" secondAttribute="leadingMargin" id="qcb-k1-94p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Social Media" id="o77-Qb-hId">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8iH-ne-PAa">
+                                        <rect key="frame" x="0.0" y="284" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8iH-ne-PAa" id="cTK-eE-GkE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like on Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6Q-pf-dJT">
+                                                    <rect key="frame" x="8" y="12" width="144" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="144" id="5RT-7R-QjP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="v6Q-pf-dJT" secondAttribute="bottom" constant="3" id="1B7-eH-Xe5"/>
+                                                <constraint firstItem="v6Q-pf-dJT" firstAttribute="top" secondItem="cTK-eE-GkE" secondAttribute="topMargin" constant="4" id="ZKf-LI-L7p"/>
+                                                <constraint firstItem="v6Q-pf-dJT" firstAttribute="leading" secondItem="cTK-eE-GkE" secondAttribute="leadingMargin" id="ctc-NT-g7G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LCX-nE-9WJ">
+                                        <rect key="frame" x="0.0" y="328" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCX-nE-9WJ" id="Xns-xq-1dm">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow on Twitter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-eh-Upp">
+                                                    <rect key="frame" x="8" y="12" width="144" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="144" id="wTb-RZ-etc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GdL-eh-Upp" firstAttribute="top" secondItem="Xns-xq-1dm" secondAttribute="topMargin" constant="4" id="4YW-y3-s0l"/>
+                                                <constraint firstItem="GdL-eh-Upp" firstAttribute="leading" secondItem="Xns-xq-1dm" secondAttribute="leadingMargin" id="7Ue-St-h51"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GdL-eh-Upp" secondAttribute="bottom" constant="3" id="LOq-p4-Qvu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8wJ-wf-JXD">
+                                        <rect key="frame" x="0.0" y="372" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8wJ-wf-JXD" id="MEo-rw-xKO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow on Instagram" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUr-z2-Rf1">
+                                                    <rect key="frame" x="8" y="12" width="155" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="155" id="A1k-Um-ndI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NUr-z2-Rf1" secondAttribute="bottom" constant="3" id="Mwb-em-Jvu"/>
+                                                <constraint firstItem="NUr-z2-Rf1" firstAttribute="leading" secondItem="MEo-rw-xKO" secondAttribute="leadingMargin" id="Wt6-o4-j4J"/>
+                                                <constraint firstItem="NUr-z2-Rf1" firstAttribute="top" secondItem="MEo-rw-xKO" secondAttribute="topMargin" constant="4" id="dfs-tA-w0f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Legal" id="ZV4-Cg-wXB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Lv0-ZV-Ay5">
+                                        <rect key="frame" x="0.0" y="438" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lv0-ZV-Ay5" id="STf-eT-il9">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAC-9R-EqX">
+                                                    <rect key="frame" x="8" y="12" width="139" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="139" id="f1U-4G-MgZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dAC-9R-EqX" firstAttribute="leading" secondItem="STf-eT-il9" secondAttribute="leadingMargin" id="1bD-vg-jwN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dAC-9R-EqX" secondAttribute="bottom" constant="3" id="L0m-pC-fZX"/>
+                                                <constraint firstItem="dAC-9R-EqX" firstAttribute="top" secondItem="STf-eT-il9" secondAttribute="topMargin" constant="4" id="lll-PR-fln"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aZE-Bh-BNa" kind="show" id="GMR-Vi-Ku2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="7te-Xr-VHb">
+                                        <rect key="frame" x="0.0" y="482" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7te-Xr-VHb" id="kw6-up-zX6">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LON-DL-YPZ">
+                                                    <rect key="frame" x="8" y="12" width="200" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="l3b-Zm-inx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="LON-DL-YPZ" secondAttribute="bottom" constant="3" id="7qn-JK-Anh"/>
+                                                <constraint firstItem="LON-DL-YPZ" firstAttribute="leading" secondItem="kw6-up-zX6" secondAttribute="leadingMargin" id="HGe-Oi-uq1"/>
+                                                <constraint firstItem="LON-DL-YPZ" firstAttribute="top" secondItem="kw6-up-zX6" secondAttribute="topMargin" constant="4" id="nSJ-Ze-81n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1Ba-Bm-ADm" kind="show" id="qU6-cs-FmH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="yq3-sm-G25">
+                                        <rect key="frame" x="0.0" y="526" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yq3-sm-G25" id="ONf-z3-05N">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFK-jK-ilW">
+                                                    <rect key="frame" x="8" y="6" width="160" height="32"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                                    <state key="normal" title="Reset Tutorial Screen">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="resetTutorialToTutorialScreen:" destination="Hq4-h8-BJQ" eventType="touchUpInside" id="XRl-24-z4z"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="lFK-jK-ilW" secondAttribute="centerY" constant="-0.25" id="Ghz-Pj-nlG"/>
+                                                <constraint firstItem="lFK-jK-ilW" firstAttribute="leading" secondItem="ONf-z3-05N" secondAttribute="leadingMargin" id="tte-Sz-VHY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="1000" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Hq4-h8-BJQ" id="CP1-Dz-LEX"/>
+                            <outlet property="delegate" destination="Hq4-h8-BJQ" id="PhA-xJ-TmB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Menu" id="KUP-WA-wmx"/>
+                    <connections>
+                        <outlet property="contactUsRow" destination="QPt-sM-zMv" id="aXE-tM-UTd"/>
+                        <outlet property="followOnInstagramRow" destination="8wJ-wf-JXD" id="g5P-zE-lti"/>
+                        <outlet property="followOnTwitterRow" destination="LCX-nE-9WJ" id="N7w-H8-hly"/>
+                        <outlet property="likeOnFacebookRow" destination="8iH-ne-PAa" id="b3B-a0-2FU"/>
+                        <outlet property="rateUsRow" destination="die-s6-6AI" id="70T-BS-pdB"/>
+                        <outlet property="shareRow" destination="eNU-pK-XWE" id="fH5-sE-ggY"/>
+                        <outletCollection property="menuTextLabels" destination="Bdg-FQ-kdv" id="JQK-He-9SK"/>
+                        <outletCollection property="menuTextLabels" destination="dAC-9R-EqX" id="lH6-vb-sdh"/>
+                        <outletCollection property="menuTextLabels" destination="LON-DL-YPZ" id="9Bg-Ph-VDj"/>
+                        <outletCollection property="menuTextLabels" destination="v6Q-pf-dJT" id="Lhb-5T-hx8"/>
+                        <outletCollection property="menuTextLabels" destination="GdL-eh-Upp" id="40h-cW-JeT"/>
+                        <outletCollection property="menuTextLabels" destination="NUr-z2-Rf1" id="dGw-if-77S"/>
+                        <outletCollection property="menuTextLabels" destination="XpL-Qj-yiV" id="jbg-NX-tXz"/>
+                        <outletCollection property="menuTextLabels" destination="9SP-rZ-AJk" id="Z2p-TJ-E25"/>
+                        <outletCollection property="menuTextLabels" destination="udY-XQ-RPK" id="XHj-oa-stA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKe-gG-i4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-828" y="125"/>
+        </scene>
+        <!--Jump Into Rivet-->
+        <scene sceneID="Me6-tx-3hL">
+            <objects>
+                <viewController title="Jump Into Rivet" id="N5q-vh-1yH" customClass="JumpIntoRivetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zGu-gf-cQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="4np-tn-b5Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TJI-Gu-rFU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97o-FD-eF0">
+                                <rect key="frame" x="4" y="64" width="592" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uq3-3g-3MF">
+                                        <rect key="frame" x="0.0" y="0.0" width="592" height="268"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FrogIcon100px" translatesAutoresizingMaskIntoConstraints="NO" id="ChS-3K-NF1">
+                                                <rect key="frame" x="246" y="177" width="100" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="hNf-M7-D51"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ground Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-ix-zUM">
+                                                <rect key="frame" x="246" y="44" width="104" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBd-Hw-zmt">
+                                                <rect key="frame" x="16" y="16" width="560" height="21"/>
+                                                <string key="text">Check out interesting conversations about almost anything. They’re all happening around you. Feel like starting your own discussion? Talk to another user to share your opinion, spread an idea, or just chat.
+
+Use Rivet how you want. Just remember:</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaF-zM-JBI">
+                                                <rect key="frame" x="264" y="148" width="66" height="21"/>
+                                                <string key="text">Jump In!
+Explore your community.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-9E-SFm">
+                                                <rect key="frame" x="16" y="72" width="560" height="21"/>
+                                                <string key="text">1. Don't be a jerk
+
+2. Share jokes, thoughts, stories, questions, etc.
+
+3. DON'T share people's private information.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="J4p-9E-SFm" firstAttribute="top" secondItem="c9b-ix-zUM" secondAttribute="bottom" constant="7.5" id="75U-cu-QZ2"/>
+                                            <constraint firstAttribute="bottom" secondItem="ChS-3K-NF1" secondAttribute="bottom" constant="19" id="Dra-er-p0A"/>
+                                            <constraint firstItem="HaF-zM-JBI" firstAttribute="top" secondItem="J4p-9E-SFm" secondAttribute="bottom" constant="56" id="ExI-NO-JsB"/>
+                                            <constraint firstAttribute="centerX" secondItem="HaF-zM-JBI" secondAttribute="centerX" constant="-0.5" id="Gaz-ec-To4"/>
+                                            <constraint firstItem="J4p-9E-SFm" firstAttribute="leading" secondItem="Uq3-3g-3MF" secondAttribute="leading" constant="16" id="JXV-AK-XWZ"/>
+                                            <constraint firstItem="ChS-3K-NF1" firstAttribute="top" secondItem="HaF-zM-JBI" secondAttribute="bottom" constant="8" id="ixo-Nc-I4g"/>
+                                            <constraint firstAttribute="trailing" secondItem="J4p-9E-SFm" secondAttribute="trailing" constant="16" id="ksX-RH-3C1"/>
+                                            <constraint firstItem="cBd-Hw-zmt" firstAttribute="leading" secondItem="Uq3-3g-3MF" secondAttribute="leading" constant="16" id="laa-2M-UN8"/>
+                                            <constraint firstAttribute="centerX" secondItem="c9b-ix-zUM" secondAttribute="centerX" constant="-0.5" id="m9R-32-xVs"/>
+                                            <constraint firstAttribute="centerX" secondItem="ChS-3K-NF1" secondAttribute="centerX" id="qiO-Ed-JUR"/>
+                                            <constraint firstItem="c9b-ix-zUM" firstAttribute="top" secondItem="cBd-Hw-zmt" secondAttribute="bottom" constant="7.5" id="tgo-vh-rk9"/>
+                                            <constraint firstAttribute="trailing" secondItem="cBd-Hw-zmt" secondAttribute="trailing" constant="16" id="xKN-sz-HHV"/>
+                                            <constraint firstItem="cBd-Hw-zmt" firstAttribute="top" secondItem="Uq3-3g-3MF" secondAttribute="top" constant="16" id="ysg-KC-8Jf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uq3-3g-3MF" firstAttribute="leading" secondItem="97o-FD-eF0" secondAttribute="leading" id="3Kp-6o-mCW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uq3-3g-3MF" secondAttribute="bottom" id="4FB-eM-sTB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uq3-3g-3MF" secondAttribute="trailing" id="Uc8-GW-Ajn"/>
+                                    <constraint firstItem="Uq3-3g-3MF" firstAttribute="width" secondItem="97o-FD-eF0" secondAttribute="width" id="xwp-Vl-AsC"/>
+                                    <constraint firstItem="Uq3-3g-3MF" firstAttribute="top" secondItem="97o-FD-eF0" secondAttribute="top" id="zAW-ek-XcL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="97o-FD-eF0" firstAttribute="top" secondItem="zGu-gf-cQe" secondAttribute="bottom" id="H8n-kX-9yC"/>
+                            <constraint firstItem="97o-FD-eF0" firstAttribute="leading" secondItem="TJI-Gu-rFU" secondAttribute="leadingMargin" constant="-16" id="Trk-J4-oeH"/>
+                            <constraint firstItem="4np-tn-b5Z" firstAttribute="top" secondItem="97o-FD-eF0" secondAttribute="bottom" id="cGU-Ak-ePv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="97o-FD-eF0" secondAttribute="trailing" constant="-16" id="o1j-Yp-lP8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frogImage" destination="ChS-3K-NF1" id="q4e-A0-KI0"/>
+                        <outlet property="jumpInTitleLabel" destination="HaF-zM-JBI" id="aHO-HI-z1Q"/>
+                        <outlet property="rulesLabel" destination="J4p-9E-SFm" id="ggC-yN-1wB"/>
+                        <outlet property="rulesTitleLabel" destination="c9b-ix-zUM" id="PNC-kD-jz4"/>
+                        <outlet property="topTextLabel" destination="cBd-Hw-zmt" id="8fq-vf-a9Q"/>
+                        <segue destination="eG8-0b-g6k" kind="show" identifier="JumpIntoRivetToSpecialThanks" id="B7P-6c-9v4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkO-FE-8ZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="824"/>
+        </scene>
+        <!--Special Thanks-->
+        <scene sceneID="Mbv-tS-dbw">
+            <objects>
+                <viewController title="Special Thanks" id="eG8-0b-g6k" customClass="SpecialThanksViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTk-rQ-a3B"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Jg-3w-dH6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qrD-vl-5yu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEM-JY-lZ0">
+                                <rect key="frame" x="12" y="205" width="576" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">John O’Brien
+Adam Kaller
+The Veloso Family
+GRB
+The Grinstead Family
+Lance Hasson
+Jeff Nelson
+Mike Drapeau
+John Rigney
+Michelle Hutcherson
+@brewtheway
+Thank you, O Captain, my Captain- her most royal and creative - Gita Khote
+Rebecca H
+Mama Opal
+Melissa Fleming
+RAHUL
+Eric Carboni
+Chocolate Bear
+David Bugliari
+Bryan M. Wilson
+Lorene Garnier
+Janel Bersabal
+Parthoo (4F For Life)
+Cory Wacht (Ginger Bear)
+Elaine Johnson
+Candy Danforth
+Rem Tolentino
+Wayne Lu
+Joshua King
+Luke Alexander
+Bcouch
+Alvin Mui</string>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Special Thanks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTy-fa-93N">
+                                <rect key="frame" x="4" y="80" width="592" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrogIcon100px" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-Dr-r7K">
+                                <rect key="frame" x="250" y="117" width="100" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Mhl-Mj-SeZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Jg-3w-dH6" firstAttribute="top" secondItem="mEM-JY-lZ0" secondAttribute="bottom" id="19s-GZ-Ra6"/>
+                            <constraint firstItem="l9E-Dr-r7K" firstAttribute="top" secondItem="NTy-fa-93N" secondAttribute="bottom" constant="16" id="6wx-pJ-3N4"/>
+                            <constraint firstItem="NTy-fa-93N" firstAttribute="leading" secondItem="qrD-vl-5yu" secondAttribute="leadingMargin" constant="-16" id="O2z-8y-4gi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mEM-JY-lZ0" secondAttribute="trailing" constant="-8" id="dVl-Lj-xPt"/>
+                            <constraint firstItem="mEM-JY-lZ0" firstAttribute="top" secondItem="l9E-Dr-r7K" secondAttribute="bottom" constant="16" id="eIe-FA-Pel"/>
+                            <constraint firstItem="mEM-JY-lZ0" firstAttribute="leading" secondItem="qrD-vl-5yu" secondAttribute="leadingMargin" constant="-8" id="ic3-ZX-5EG"/>
+                            <constraint firstAttribute="centerX" secondItem="l9E-Dr-r7K" secondAttribute="centerX" id="n4y-1P-5fG"/>
+                            <constraint firstItem="NTy-fa-93N" firstAttribute="top" secondItem="wTk-rQ-a3B" secondAttribute="bottom" constant="16" id="poe-KV-2xE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NTy-fa-93N" secondAttribute="trailing" constant="-16" id="q1f-E7-gkn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="specialThanksTextView" destination="mEM-JY-lZ0" id="Xi9-dv-DKO"/>
+                        <outlet property="specialThanksTitle" destination="NTy-fa-93N" id="8mC-T0-GNT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3NQ-DH-gCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="824"/>
+        </scene>
+        <!--Privacy Policy-->
+        <scene sceneID="mkr-Nr-5Nc">
+            <objects>
+                <viewController title="Privacy Policy" id="aZE-Bh-BNa" customClass="PrivacyPolicyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3OQ-Mn-uOP"/>
+                        <viewControllerLayoutGuide type="bottom" id="2kv-qh-vtU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B47-rM-tSh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blz-4P-dC6">
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">This privacy policy has been compiled to better serve those who are concerned with how their 'Personally identifiable information' (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="What personal information do we collect from Rivet users?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We don’t proactively collect personally identifiable information from users. We do, however, proactively track user activity and software bug reports. Additionally, when using Rivet, users have the ability to submit their own content. We reserve the right to collect this content. This information is kept anonymous and used primarily to improve the user experience. Users should never submit personally identifiable information in any public channel on the app. However, in those instances, we still reserve the right to collect that information.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="When do we collect information?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+User activity, software bug reports, and user-submitted information are all collected regularly. 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How do we use your information?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We may use the information we collect from you in the following ways:
+    * To improve our app and give you a better user experience.
+    * To allow us to better help you with any issues you may have using Rivet.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How do we protect user information?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all information you supply is encrypted via Secure Socket Layer (SSL) technology.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Third Party Disclosure">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information (excluding content which you have publicly submitted in channels visible to other Rivet users in your area) unless we provide you with advance notice. This does not include third parties who assist us in operating our app, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our policies, or protect ours or others' rights, property, or safety. 
+
+However, non-personally identifiable user information may be provided to other parties for marketing, advertising, or other uses.
+ 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Third party links">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Occasionally, at our discretion, we may include or offer third party products or services on our app. These third parties have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked services. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these services.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Does our app allow third party behavioral tracking?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Yes, we allow third party behavioral tracking. As mentioned above, we use this information to improve user experience.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="COPPA (Children Online Privacy Protection Act)">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We do not specifically market to children under 13. If we discover any user under the age of 13 has submitted information to us, we will remove that information from our system.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Fair Information Practices">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+In order to be in line with Fair Information Practices we will notify users via in app posting within 7 business days
+
+We also agree to the individual redress principle, which requires that individuals have a right to pursue legally enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or a government agency to investigate and/or prosecute non-compliance by data processors.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="In-app Messages">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Due to the anonymous nature of Rivet, your messages will not be connected to your personal identity in any way. However, all messages sent/received in all public channels will be viewable by our staff in order to remove offensive or threatening content. We also reserve the right to remove content for any other reason. However, messages sent in private modes will not be directly viewable by our staff unless another user files a report suggesting threatening or abusive behavior. We then reserve the right to share this information along with your device ID / IP address with appropriate law enforcement officials.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Contacting Us">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+If there are any questions regarding this privacy policy you may contact us using the information below.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+http://jumpintorivet.com</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+legal@jumpintorivet.com
+
+Last updated: 8/3/15</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Blz-4P-dC6" secondAttribute="trailing" id="7tv-2e-Ka0"/>
+                            <constraint firstItem="Blz-4P-dC6" firstAttribute="top" secondItem="3OQ-Mn-uOP" secondAttribute="bottom" id="XAz-gO-992"/>
+                            <constraint firstItem="2kv-qh-vtU" firstAttribute="top" secondItem="Blz-4P-dC6" secondAttribute="bottom" id="vDB-Nm-8aN"/>
+                            <constraint firstItem="Blz-4P-dC6" firstAttribute="leading" secondItem="B47-rM-tSh" secondAttribute="leadingMargin" id="zLG-GS-p6w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Blz-4P-dC6" id="T3b-3A-RCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ot5-po-Mlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-565"/>
+        </scene>
+        <!--Terms and Conditions-->
+        <scene sceneID="sEa-yQ-se6">
+            <objects>
+                <viewController title="Terms and Conditions" id="1Ba-Bm-ADm" customClass="TermsAndConditionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eeT-Ui-nzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wg3-LZ-HnW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Y9-TU-2ad">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epx-c0-rHk">
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using Rivet operated by Rivet LLC.
+ 
+Your access to and use of Rivet is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use Rivet.
+ 
+By accessing or using Rivet you agree to be bound by these Terms. If you disagree with any part of the terms then you may not use Rivet.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Termination">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We may terminate or suspend access to Rivet immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+ 
+All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Links To Other Web Sites">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Rivet may contain links to third-­party web sites or services that are not owned or controlled by Rivet LLC.
+ 
+Rivet LLC has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Rivet LLC shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+ 
+We strongly advise you to read the terms and conditions and privacy policies of any third-­party web sites or services that you visit.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Governing Law">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+These Terms shall be governed and construed in accordance with the laws of The United States of America without regard to its conflict of law provisions.
+ 
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding Rivet, and supersede and replace any prior agreements we might have between us regarding Rivet.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Changes">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+ 
+By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using Rivet.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Unauthorized Activities">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+When using the Rivet, you agree not to:
+ 
+    * Harass, abuse, threaten, defame, or otherwise violate the legal rights (such as rights of privacy and publicity) of others.
+    * Use racially, religiously, or sexuality offensive language.
+    * Promote or encourage illegal activities
+    * Post anything that may exploit minors.
+    * Post any copyrighted or trademarked materials without the express consent of the owner.
+    * Solicit any unauthorized advertising materials, including, but not limited to: spam, junk mail, false services, pyramid schemes, or any other generally accepted unauthorized advertising materials.
+    * Use any automated means to access or use Rivet. This includes, but is not limited to: robots, scrapers, and spiders.
+    * Maliciously and/or deliberately impose an unreasonable load on our infrastructure.
+    * Post any language that is obscene, threatening, or derogatory to any individual or group.
+
+This list of prohibitions merely provides some examples and is not intended to be nor taken to be exhaustive or exclusive.  We reserve the right to terminate access to your account and/or refuse, delete or remove any content which you submit; with or without cause and with or without notice, for any reason. We may also terminate access to Rivet if any action is found to be disruptive to Rivet or any of its users.  We reserve the right to report any illegal or unlawful behaviors or actions to applicable law enforcement.
+ 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Copyright Policy">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Rivet LLC respects the intellectual property of other individuals, organizations, and companies. If you believe that any of your copyrighted material exists in any way in Rivet, please let us know by emailing us at the email address listed at the bottom of the Terms with the subject line “Copyright Infringement Inquiry”. Providing us with as much evidence and information as possible will help resolve the issue in the timeliest manner. Such evidence and information may include:
+    * What content you believe to be in violation of your copyright and how it is being used
+    * A statement encouraging/advocating your ownership of the copyrighted material
+    * Reasonably sufficient proof of your identity as the owner of the material
+    * A way for us to contact you quickly (email, phone, address)
+
+While we will try our best to respond to any copyright infringement inquiries as fast as possible, please understand that a respectable amount of time might be needed in order for our staff to evaluate the inquiry and respond accordingly. We will try to respond within three (3) business days, however, certain circumstances may change this response time, in which case we are held liable for the delay.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Contact Us">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+If you have any questions about these Terms, please contact us.
+ 
+http://jumpintorivet.com
+
+legal@jumpintorivet.com
+
+Last updated: 8/3/15</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Roboto-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="epx-c0-rHk" firstAttribute="top" secondItem="eeT-Ui-nzB" secondAttribute="bottom" id="Bip-yK-0VW"/>
+                            <constraint firstItem="epx-c0-rHk" firstAttribute="leading" secondItem="0Y9-TU-2ad" secondAttribute="leadingMargin" id="EaC-oL-g4M"/>
+                            <constraint firstItem="Wg3-LZ-HnW" firstAttribute="top" secondItem="epx-c0-rHk" secondAttribute="bottom" id="cUi-xq-xHI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="epx-c0-rHk" secondAttribute="trailing" id="fbJ-9s-Kcc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="epx-c0-rHk" id="G6V-1n-GVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIB-fK-mTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FrogIcon100px" width="101" height="72"/>
+    </resources>
+</document>
